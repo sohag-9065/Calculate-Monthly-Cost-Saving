@@ -101,7 +101,7 @@ document.getElementById('save-button').addEventListener('click' , function(){
     // error message div element 
     const failError = element('blance-influence-message');
 
-    if(saving > blance){
+    if((saving > blance ) || ( saveInput == -1 )){
         document.getElementById('error-message').innerText = "Your Remaing blace less than saving amount.";
         // error show 
         failError.style.display = 'block';
